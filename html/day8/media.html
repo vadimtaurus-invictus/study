@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Медіа-контент</title>
+  </head>
+  <body>
+    <!-- атрибут controls не потребує значення , потрібен щоб браузер показав плеєр-->
+    <audio controls>
+      <!-- Спочатку браузер намагається завантажити і увімкнути horse.ogg, якщо не підтримує огг, або не може завантажити то шукає наступний  source -->
+      <source src="horse.ogg" type="audio/ogg" />
+      <!--  якщо наступний файл підтримується і завантажується то отримуємо аудіо -->
+      <source
+        src="https://6e5c54a7-dc6e-464f-b8b7-92ccc43ff51d.mdnplay.dev/shared-assets/audio/t-rex-roar.mp3"
+        type="audio/mpeg"
+      />
+      <!-- якщо нічого не вийшло то виводимо повідомлення -->
+      Ваш браузер не підтримує тег audio
+    </audio>
+
+    <video width="320" controls>
+      <!-- вбудований браузер не підтримує webm, тому завантажується mp4 -->
+      <source
+        src="https://94c6992e-bf97-4d79-b059-4f4bce87b045.mdnplay.dev/shared-assets/videos/flower.webm"
+        type="video/webm"
+      />
+      <!-- вбудований браузер покаже відео нижче(не підтримує webmстаном на 05.06.2026) -->
+      <source
+        src="https://94c6992e-bf97-4d79-b059-4f4bce87b045.mdnplay.dev/shared-assets/videos/flower.mp4"
+        type="video/mp4"
+      />
+      Ваш браузер не підтримує тег video
+    </video>
+  </body>
+</html>
