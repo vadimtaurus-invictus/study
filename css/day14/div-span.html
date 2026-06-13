@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>контейнери div/span</title>
+  </head>
+  <style>
+    body {
+      background-color: forestgreen;
+    }
+    .first-div {
+      background-color: blanchedalmond;
+    }
+    .first-span {
+      background-color: aquamarine;
+    }
+    .yellow {
+      color: yellow;
+    }
+    .orange {
+      color: orange;
+    }
+    .m-name {
+      background-color: crimson;
+    }
+  </style>
+  <body>
+    <div class="first-div">
+      Блочний контейнер Div. найчастіше використовується для групування
+      елементів різних типів: блочних і рядкових <br />
+      <span class="first-span"
+        >span рядковий (інлайн) span який використовується для позначення (в
+        даному випадку тексту) та його оформлення</span
+      >
+      span закрився - тепер знову div
+    </div>
+    <div class="yellow">
+      <!-- Замість того, щоб 6 разів застосовувати клас до абзацу
+     ми згрупували абзаци в 2 пори року за допомогою div -->
+      <!-- Колір тексту в абзацах успадкований від div -->
+      <!-- Якщо задати колір для абзацу, то спадкування перестане працювати -->
+      <p>Червень</p>
+      <p>Липень</p>
+      <p>Серпень</p>
+    </div>
+    <div class="orange">
+      <!-- тег span використовуємо, щоб задати оформлення фрагменту рядка -->
+      <p><span class="m-name">Вересень</span>, 1-й місяць осені</p>
+      <p><span class="m-name">Жовтень</span>, 2-й місяць осені</p>
+      <p><span class="m-name">Листопад</span>, 3-й місяць осені</p>
+    </div>
+  </body>
+</html>

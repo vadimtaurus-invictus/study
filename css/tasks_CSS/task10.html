@@ -1,0 +1,227 @@
+<!doctype html>
+<html
+  lang="uk
+"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблиці з CSS</title>
+    <style>
+      .name_color {
+        background-color: #a7a3a3;
+      }
+      .header_2 {
+        background-color: #e7e72d;
+        font-weight: bold;
+      }
+      .red_header {
+        color: #cf0202;
+        border: 1px solid #cf0202;
+        text-decoration: underline;
+      }
+      .green_header {
+        color: #09e009;
+        border: 1px solid #09e009;
+        text-decoration: underline;
+      }
+      .blue_header {
+        color: #0606d1;
+        border: 1px solid #0606d1;
+        text-decoration: underline;
+      }
+      .red-num {
+        color: #cf0202;
+        border: 1px solid #cf0202;
+      }
+      .green-num {
+        color: #09e009;
+        border: 1px solid #09e009;
+      }
+      .blue-num {
+        color: #0606d1;
+        border: 1px solid #0606d1;
+      }
+      .header-up {
+        background-color: #73bb73;
+        text-align: center;
+      }
+      .header-up_text_right {
+        background-color: #73bb73;
+        text-align: right;
+      }
+      .gray_row {
+        background-color: #c4c3c3;
+      }
+      .text_center {
+        text-align: center;
+      }
+      .text_right {
+        text-align: right;
+      }
+      .total {
+        background-color: #94c8da;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="1">
+      <tr>
+        <td rowspan="2" colspan="2">1</td>
+        <td rowspan="4" colspan="3">2</td>
+      </tr>
+
+      <tr></tr>
+
+      <tr>
+        <td rowspan="6">3</td>
+        <td rowspan="2">4</td>
+      </tr>
+
+      <tr></tr>
+
+      <tr>
+        <td colspan="4">5</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>7</td>
+        <td colspan="2">8</td>
+      </tr>
+    </table>
+    <hr />
+    <table border="1">
+      <caption>
+        <b>Таблиця кольорів</b>
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2" class="name_color">Назва кольору</th>
+          <th colspan="3" class="header_2">Інтенсивність основних кольорів</th>
+        </tr>
+        <tr>
+          <th class="red_header">Червоного</th>
+          <th class="green_header">Зеленого</th>
+          <th class="blue_header">Блакитного</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name_color">Чорний</td>
+          <td class="red-num">0</td>
+          <td class="green-num">0</td>
+          <td class="blue-num">0</td>
+        </tr>
+        <tr>
+          <td class="name_color">Жовтий</td>
+          <td class="red-num">255</td>
+          <td class="green-num">179</td>
+          <td class="blue-num">0</td>
+        </tr>
+        <tr>
+          <td class="name_color">Оранжевий</td>
+          <td class="red-num">185</td>
+          <td class="green-num">6</td>
+          <td class="blue-num">255</td>
+        </tr>
+        <tr>
+          <td class="name_color">Бузковий</td>
+          <td class="red-num">255</td>
+          <td class="green-num">89</td>
+          <td class="blue-num">255</td>
+        </tr>
+        <tr>
+          <td class="name_color">Фолетовий</td>
+          <td class="red-num">255</td>
+          <td class="green-num">255</td>
+          <td class="blue-num">134</td>
+        </tr>
+        <tr>
+          <td class="name_color">Білий</td>
+          <td class="red-num">255</td>
+          <td class="green-num">255</td>
+          <td class="blue-num">255</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+
+    <table border="1">
+      <caption>
+        <strong>Звіт про залишки товарів на складі</strong>
+      </caption>
+      <thead>
+        <tr>
+          <th class="header-up">Артикул</th>
+          <th class="header-up">Найменування товару</th>
+          <th class="header-up">Категорія</th>
+          <th class="header-up">Кількість</th>
+          <th class="header-up">Ціна за одиницю</th>
+        </tr>
+        <tr>
+          <th class="header-up">Код</th>
+          <th class="header-up">Опис</th>
+          <th class="header-up">Тип</th>
+          <th class="header-up_text_right">шт.</th>
+          <th class="header-up_text_right">грн</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text_center">A001</td>
+          <td>Ноутбук Dell Inspiron</td>
+          <td>Електроніка</td>
+          <td class="text_right">15</td>
+          <td class="text_right">25500</td>
+        </tr>
+        <tr class="gray_row">
+          <td class="text_center">A002</td>
+          <td>Миша бездротова Logitech</td>
+          <td>Електроніка</td>
+          <td class="text_right">45</td>
+          <td class="text_right">850</td>
+        </tr>
+        <tr>
+          <td class="text_center">B101</td>
+          <td>Стіл офісний дерев'яний</td>
+          <td>Меблі</td>
+          <td class="text_right">8</td>
+          <td class="text_right">3200</td>
+        </tr>
+        <tr class="gray_row">
+          <td class="text_center">B102</td>
+          <td>Крісло офісне ергономічне</td>
+          <td>Меблі</td>
+          <td class="text_right">12</td>
+          <td class="text_right">4500</td>
+        </tr>
+        <tr>
+          <td class="text_center">C201</td>
+          <td>Папір офісний А4 (пачка)</td>
+          <td>Канцтовари</td>
+          <td class="text_right">120</td>
+          <td class="text_right">180</td>
+        </tr>
+        <tr class="gray_row">
+          <td class="text_center">C202</td>
+          <td>Ручка кулькова синя</td>
+          <td>Канцтовари</td>
+          <td class="text_right">200</td>
+          <td class="text_right">15</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="total">
+          <td class="text_center"><strong>Всього</strong></td>
+          <td><strong>6 позицій</strong></td>
+          <td><strong>3 категорії</strong></td>
+          <td class="text_right"><strong>400</strong></td>
+          <td class="text_right"><strong>34245</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
