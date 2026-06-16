@@ -1,8 +1,5 @@
 <!doctype html>
-<html
-  lang="uk
-"
->
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,23 +30,26 @@
       .red-num {
         color: #cf0202;
         border: 1px solid #cf0202;
+        text-align: center;
       }
       .green-num {
         color: #09e009;
         border: 1px solid #09e009;
+        text-align: center;
       }
       .blue-num {
         color: #0606d1;
         border: 1px solid #0606d1;
+        text-align: center;
+      }
+      caption {
+        font-weight: bold;
       }
       .header-up {
         background-color: #73bb73;
         text-align: center;
       }
-      .header-up_text_right {
-        background-color: #73bb73;
-        text-align: right;
-      }
+
       .gray_row {
         background-color: #c4c3c3;
       }
@@ -91,7 +91,7 @@
     <hr />
     <table border="1">
       <caption>
-        <b>Таблиця кольорів</b>
+        Таблиця кольорів
       </caption>
       <thead>
         <tr>
@@ -130,7 +130,7 @@
           <td class="blue-num">255</td>
         </tr>
         <tr>
-          <td class="name_color">Фолетовий</td>
+          <td class="name_color">Фіолетовий</td>
           <td class="red-num">255</td>
           <td class="green-num">255</td>
           <td class="blue-num">134</td>
@@ -147,22 +147,22 @@
 
     <table border="1">
       <caption>
-        <strong>Звіт про залишки товарів на складі</strong>
+        Звіт про залишки товарів на складі
       </caption>
-      <thead>
+      <thead class="header-up">
         <tr>
-          <th class="header-up">Артикул</th>
-          <th class="header-up">Найменування товару</th>
-          <th class="header-up">Категорія</th>
-          <th class="header-up">Кількість</th>
-          <th class="header-up">Ціна за одиницю</th>
+          <th>Артикул</th>
+          <th>Найменування товару</th>
+          <th>Категорія</th>
+          <th>Кількість</th>
+          <th>Ціна за одиницю</th>
         </tr>
         <tr>
-          <th class="header-up">Код</th>
-          <th class="header-up">Опис</th>
-          <th class="header-up">Тип</th>
-          <th class="header-up_text_right">шт.</th>
-          <th class="header-up_text_right">грн</th>
+          <th>Код</th>
+          <th>Опис</th>
+          <th>Тип</th>
+          <th class="text_right">шт.</th>
+          <th class="text_right">грн</th>
         </tr>
       </thead>
       <tbody>
@@ -211,11 +211,11 @@
       </tbody>
       <tfoot>
         <tr class="total">
-          <td class="text_center"><strong>Всього</strong></td>
-          <td><strong>6 позицій</strong></td>
-          <td><strong>3 категорії</strong></td>
-          <td class="text_right"><strong>400</strong></td>
-          <td class="text_right"><strong>34245</strong></td>
+          <td class="text_center">Всього</td>
+          <td>6 позицій</td>
+          <td>3 категорії</td>
+          <td class="text_right">400</td>
+          <td class="text_right">34245</td>
         </tr>
       </tfoot>
     </table>
