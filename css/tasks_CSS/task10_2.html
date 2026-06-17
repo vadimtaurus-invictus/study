@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Робота10.2</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+      h1,
+      h3 {
+        color: rgb(48, 112, 48);
+      }
+      table {
+        width: 70%;
+        border-collapse: collapse;
+      }
+      .th,
+      td {
+        border: 1px solid rgb(0, 0, 0);
+      }
+      tfoot {
+        background-color: gray;
+        font-weight: bold;
+      }
+      .bg-grey {
+        background-color: lightgrey;
+      }
+      .bg-green {
+        background-color: rgb(55, 119, 53);
+      }
+      .bg-orange {
+        background-color: orange;
+      }
+      .text-green {
+        color: rgb(32, 114, 32);
+      }
+      .text-red {
+        color: red;
+      }
+      .text-bold {
+        font-weight: bold;
+      }
+      .text-light {
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Новини курсу</h1>
+    <p>Звичайне повідомлення про розклад</p>
+    <p class="bg-grey">Повідомлення у блок-нотатці</p>
+    <p class="bg-grey text-red text-bold">Важлива нотатка,не пропустіть</p>
+    <h3>Завдання тижня</h3>
+    <p>Звмчайне повідомлення про завдання</p>
+    <p class="bg-grey">Нотатка з підказкою</p>
+    <p class="bg-grey text-light">Другорядна примітка дрібним.</p>
+    <h3>Оголошення</h3>
+    <p>Звичайне оголошення</p>
+    <p class="text-red text-bold bg-orange">
+      Головне оголошення - виділити окремо
+    </p>
+    <p class="text-light">Дрібна примітка без блоку</p>
+    <h3>Підсумки</h3>
+    <table>
+      <thead>
+        <tr class="bg-green text-bold">
+          <th>Тема</th>
+          <th>Бали</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Разом</td>
+          <td>75</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
