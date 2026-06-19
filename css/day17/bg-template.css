@@ -1,0 +1,26 @@
+body {
+  background-color: azure;
+  background-image: url(pattern.jpg);
+}
+div {
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 0px 20px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.start {
+  background-color: rgba(208, 102, 235, 0.418);
+  color: beige;
+}
+.linear {
+  background-image: linear-gradient(red, yellow, green);
+}
+.radial {
+  background-image:
+    radial-gradient(ellipse at top, #e66465, transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+/* transparent - зарезервоване слово для позначення "прозорого" кольору */

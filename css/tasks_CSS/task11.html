@@ -6,7 +6,7 @@
     <title>Подорож Європою CSS</title>
     <style>
       body {
-        background-color: beige;
+        background-color: rgb(161, 200, 223);
         font-size: 20px;
         line-height: 24px;
       }
@@ -14,23 +14,31 @@
       div {
         background-color: white;
         border: 2px solid;
-        border-radius: 8px;
+        border-radius: 6px;
         padding: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
       }
-      .content {
+      .material {
         width: 70%;
         margin: auto;
         border: none;
       }
-
-      h2 {
-        background-color: #4b4d4d;
-        color: #d7dddd;
+      h1 {
+        background-color: #809dec;
+        color: #924009;
         text-align: center;
         padding: 12px;
         margin-top: 8px;
-        border-radius: 4px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        background-color: #7e9999;
+        color: #e9e9e9;
+        text-align: center;
+        padding: 12px;
+        margin-top: 8px;
+        border-radius: 12px;
       }
       .menu {
         border: none;
@@ -47,6 +55,15 @@
       ol {
         line-height: 32px;
       }
+      th {
+        background-color: #73bb73;
+      }
+      .gray_row {
+        background-color: #c4c3c3;
+      }
+      .style_bold {
+        font-weight: bold;
+      }
 
       .intro {
         background-color: antiquewhite;
@@ -55,7 +72,7 @@
         font-style: italic;
       }
 
-      .country {
+      .state {
         background-color: beige;
         border-radius: 16px;
       }
@@ -84,16 +101,16 @@
       }
       img {
         width: 100%;
-        height: 30%;
+
         border-radius: 12px;
       }
     </style>
   </head>
   <body>
-    <div class="content">
+    <div class="material">
       <h1>Захоплююча подорож Європою</h1>
       <hr />
-      <p>Маршрути</p>
+      <p>Маршрути:</p>
 
       <div class="menu">
         <ul>
@@ -141,8 +158,7 @@
         </blockquote>
       </div>
 
-      
-      <div class="country">
+      <div class="state">
         <h2 id="fr">
           <span class="blue">Фр</span><span>анц</span
           ><span class="red">ія</span>
@@ -180,8 +196,7 @@
         </ul>
       </div>
 
-      
-      <div class="country">
+      <div class="state">
         <h2 id="it">
           <span class="green">Іт</span>ал<span class="red">ія</span>
         </h2>
@@ -223,8 +238,7 @@
         </ol>
       </div>
 
-      
-      <div class="country">
+      <div class="state">
         <h2 id="gr">
           <span class="blue">Г</span>р<span class="blue">е</span>ц<span
             class="blue"
@@ -290,7 +304,6 @@
         </ol>
       </div>
 
-      
       <div class="total">
         <h2>Порівняння відвіданих країн</h2>
 
@@ -302,25 +315,25 @@
             <th>Греція</th>
           </tr>
           <tr>
-            <td>Кухня</td>
+            <td class="style_bold">Кухня</td>
             <td>Вишукана</td>
             <td>Різноманітна</td>
             <td>Традиційна</td>
           </tr>
-          <tr>
-            <td>Пляжі</td>
+          <tr class="gray_row">
+            <td class="style_bold">Пляжі</td>
             <td>Рів'єра</td>
             <td>Амальфі</td>
             <td>Острови</td>
           </tr>
           <tr>
-            <td>Історія</td>
+            <td class="style_bold">Історія</td>
             <td>Середньовічна</td>
             <td>Антична/Ренесанс</td>
             <td>Антична</td>
           </tr>
-          <tr>
-            <td>Мистецтво</td>
+          <tr class="gray_row">
+            <td class="style_bold">Мистецтво</td>
             <td>Імпресіонізм</td>
             <td>Ренесанс</td>
             <td>Класичне</td>
