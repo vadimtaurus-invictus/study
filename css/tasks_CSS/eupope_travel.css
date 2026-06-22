@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(161, 200, 223);
+  font-size: 20px;
+  line-height: 24px;
+}
+
+div {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.material {
+  width: 70%;
+  margin: auto;
+  border: none;
+}
+h1 {
+  background-color: #809dec;
+  color: #924009;
+  text-align: center;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 12px;
+}
+
+h2 {
+  background-color: #7e9999;
+  color: #e9e9e9;
+  text-align: center;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 12px;
+}
+.menu {
+  border: none;
+}
+
+p {
+  text-align: justify;
+}
+blockquote {
+  background-color: rgba(208, 102, 235, 0.418);
+  border-radius: 12px;
+  width: fit-content;
+  margin: 20px auto;
+}
+strong {
+  color: #1b6e42;
+}
+
+ul,
+ol {
+  line-height: 32px;
+}
+th {
+  background-color: #73bb73;
+}
+.gray_row {
+  background-color: #c4c3c3;
+}
+.style_bold {
+  font-weight: bold;
+}
+
+.intro {
+  background-color: antiquewhite;
+  border-radius: 8px 8px 14px 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.state_france {
+  background-image: linear-gradient(to right, red, white, blue);
+  border-radius: 16px;
+}
+.state_italy {
+  background-image: linear-gradient(to right, green, white, red);
+  border-radius: 16px;
+}
+.state_greece {
+  background-image: linear-gradient(
+    to top,
+    blue,
+    white,
+    blue,
+    white,
+    blue,
+    white,
+    blue,
+    white
+  );
+  border-radius: 16px;
+}
+
+.green {
+  color: #009344;
+}
+
+.red {
+  color: #c42e3a;
+}
+
+.blue {
+  color: #002153;
+}
+
+.total {
+  background-color: antiquewhite;
+  border-radius: 16px 16px 8px 8px;
+}
+table {
+  margin: auto;
+  border-color: blue;
+
+  background-color: yellowgreen;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+td {
+  font-style: italic;
+}
+img {
+  width: 100%;
+
+  border-radius: 12px;
+}

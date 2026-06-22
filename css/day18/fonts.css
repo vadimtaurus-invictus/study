@@ -1,0 +1,67 @@
+/* Зразок з сайту fonts.google:
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* <weight> - шаблон, значення яке потрібно замінити 
+на бажану товщину шрифта */
+
+/* <uniquifier> - шаблон, значення яке потрібно замінити
+на таке, яке забезбечить унікальність селектор */
+
+/* Нижче звичайне правило зі звичайним селектором,
+дозволяє задати елементу шрифт і його товщину */
+/* Можна обійтися без нього */
+.montserrat-200 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+p {
+  font-size: 40px;
+}
+.serif {
+  font-family: serif;
+}
+.sans {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+.cyrsive {
+  font-family: cursive;
+}
+.fantasy {
+  font-family: fantasy;
+}
+/* Назва селектора може не включати назву шрифта
+Рекомендація: якщо назва шрифта міститть пробіл то її потрібно писати в лапках, а назву сімейства без лапок 
+Можна використовувати шрифти гугл без класів (головне підключити лінк зі шрифтом)*/
+.google-font_2 {
+  font-family: "pacifico", cursive;
+  /* Можна використовувати шрифти гугл без класів (головне підключити лінк зі шрифтом)*/
+  font-family: pacifico, cursive;
+}
+
+/* Приклад задання кількох резервних шрифтів */
+/* Спочатку браузер спробує використати "Gill Sans,
+далі, якщо не вийде, буде намагатися "Gill Sans MT" 
+і т.д. по списку. Якщо з жодним не вийде, 
+то використає назву сімейства sans-serif */
+/* Якщо шрифт Oswald вдалося підключити, 
+то браузер використає його */
+
+.some_font {
+  font-family:
+    "Gill Sans", "Gill Sans MT", "Oswald", "Trebuchet MS", sans-serif;
+}
