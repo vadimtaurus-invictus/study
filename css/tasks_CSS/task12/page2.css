@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(98, 183, 233);
+  background-image: url(../content_for_CSS/task12_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+h1 {
+  background-color: bisque;
+  color: orangered;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  margin: auto;
+  width: 30%;
+}
+div {
+  background-color: rgba(255, 187, 0, 0.37);
+  border-radius: 12px;
+  width: 90%;
+  margin: auto;
+}
+.roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.pacifico-italic {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+li {
+  font-size: 40px;
+  text-align: center;
+  list-style-position: inside;
+}
+p {
+  text-align: center;
+  font-size: 24px;
+}

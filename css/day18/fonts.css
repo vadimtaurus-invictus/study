@@ -65,3 +65,34 @@ p {
   font-family:
     "Gill Sans", "Gill Sans MT", "Oswald", "Trebuchet MS", sans-serif;
 }
+
+/* Функція для завантаження власного шрифта
+! -Завантаження не дорвінює використанню(потрібно ще підключити) */
+
+@font-face {
+  /*  псевдонім шрифта - Bender
+це жартівливий приклад
+Для використання шрифта далі буде використовуватисЯ псевдонім */
+
+  font-family: "hey bender";
+
+  /* Шлях до розташування шрифта відносно папки де знаходиться цей файл(fonts) 
+для використання застусовуємо псевдонім(hey bender) як простий клас*/
+
+  src: url(../../assets/fonts/Bender.woff2);
+}
+.bender {
+  font-family: "hey bender", sans-serif;
+}
+@font-face {
+  font-family: "Poetsen One";
+
+  /* формат woff2 розроблений для підключення до сайтів(менше важить) */
+
+  src: url(../../assets/fonts/PoetsenOne-Regular.woff2) format(woff2);
+}
+.poetsen_one {
+  /* Регіст літер не впливає на використання шрифта */
+
+  font-family: "Poetsen One", sans-serif;
+}
