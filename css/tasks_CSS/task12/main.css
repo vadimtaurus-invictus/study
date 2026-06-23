@@ -10,8 +10,10 @@ h1 {
   margin: 12px auto;
   width: 30%;
 }
-li {
+ul {
   font-size: 40px;
   text-align: center;
   list-style-position: inside;
+  padding-inline-start: 0px;
+  list-style-type: none;
 }

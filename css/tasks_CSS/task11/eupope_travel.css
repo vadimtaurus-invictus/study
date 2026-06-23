@@ -41,10 +41,12 @@ p {
   text-align: justify;
 }
 blockquote {
+  text-align: center;
   background-color: rgba(208, 102, 235, 0.418);
   border-radius: 12px;
-  width: fit-content;
-  margin: 20px auto;
+  width: 30%;
+  padding: 12px, 12px, 12px, 12px;
+  margin: 12px auto;
 }
 strong {
   color: #1b6e42;
@@ -80,17 +82,7 @@ th {
   border-radius: 16px;
 }
 .state_greece {
-  background-image: linear-gradient(
-    to top,
-    blue,
-    white,
-    blue,
-    white,
-    blue,
-    white,
-    blue,
-    white
-  );
+  background-image: linear-gradient(to top, blue, white, blue, white);
   border-radius: 16px;
 }
 
