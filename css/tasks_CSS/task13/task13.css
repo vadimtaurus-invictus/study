@@ -1,0 +1,91 @@
+/* Перша таблиця */
+
+caption {
+  font-weight: bold;
+}
+caption:hover {
+  color: blue;
+  font-weight: bold;
+}
+.table_1 {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.table_1 th,
+.table_1 td {
+  border: 2px solid black;
+  padding: 10px;
+}
+.table_1 td:first-child {
+  background-color: rgb(173, 173, 173);
+}
+.table_1 thead tr:first-child th {
+  background-color: rgb(173, 173, 173);
+}
+.table_1 thead tr:first-child th.main-title {
+  background-color: yellow;
+}
+.red-u {
+  color: red;
+  text-decoration: underline;
+}
+.green-u {
+  color: green;
+  text-decoration: underline;
+}
+.blue-u {
+  color: blue;
+  text-decoration: underline;
+}
+.table_1 tbody td:nth-child(2) {
+  color: red;
+  border: 2px solid red;
+}
+.table_1 tbody td:nth-child(3) {
+  color: green;
+  border: 2px solid green;
+}
+.table_1 tbody td:nth-child(4) {
+  color: blue;
+  border: 2px solid blue;
+}
+
+/* Друга таблиця */
+
+.table_2 {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.table_2 th,
+.table_2 td {
+  border: 2px solid black;
+  padding: 8px 12px;
+  text-align: left;
+}
+.table_2 td:nth-child(1),
+.table_2 th:nth-child(1),
+.table_2 th:nth-child(2),
+.table_2 th:nth-child(3) {
+  text-align: center;
+}
+.table_2 th:nth-child(4),
+.table_2 td:nth-child(4),
+.table_2 th:nth-child(5),
+.table_2 td:nth-child(5) {
+  text-align: right;
+}
+.table_2 thead tr:first-child th {
+  background-color: #4c9463;
+}
+.table_2 thead tr:last-child th {
+  background-color: #4c9463;
+}
+.table_2 tbody tr:nth-child(even) {
+  background-color: #a1a1a1;
+}
+.table_2 tfoot tr {
+  background-color: #62a0be;
+  font-weight: bold;
+}
