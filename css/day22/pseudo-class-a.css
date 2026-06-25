@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: beige;
+}
+ul,
+section {
+  /* ширини від батьківського контейнера - body */
+  width: 70%;
+  margin: auto;
+  /*  100vh - висота видимої частини вкладки
+  відносна величина яка не залежтить від батьківського контейнера, 
+  залежить від розмірів вікна браузера */
+  margin-bottom: 100vh;
+}
+ul {
+  border: 1px dotted green;
+  text-align: center;
+  padding: 0px;
+  list-style: none;
+}
+li {
+  line-height: 1.5;
+  border: 2px solid;
+  border-radius: 12px;
+  width: 50%;
+  /* 50% від батьківського контейнера ul 
+  тобто 50% від 70% body*/
+  margin: 8px auto;
+  margin-bottom: 8px;
+}
+li:hover {
+  background-color: bisque;
+}
+section {
+  border: 2px solid darkgreen;
+  border-radius: 8px;
+
+  padding: 12px;
+}
+/* Правило застосовується, коли в URL-адресі
+буде #ідентифікатор з атрибута href гіперпосилання <a> */
+section:target {
+  background-color: lightpink;
+  border-color: blueviolet;
+}
+h2 {
+  margin-top: 0px;
+}
+
+a:link,  /* посилання за яким не переходили */
+a:visited {
+  /* посилання за яким вже переходили */
+  color: green;
+  text-decoration: none;
+}
+a:hover,
+li:hover {
+  text-decoration: underline;
+}
+/* посилання з моменту натискання до відпускання */
+a:active {
+  color: red;
+}
