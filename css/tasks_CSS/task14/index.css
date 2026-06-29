@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(98, 183, 233);
+  background-image: url(../content_for_CSS/mountain_pic1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+/* ======================Шрифти====================== */
+
+.roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.pacifico {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+/* ======================Текст і заголовки====================== */
+p {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px, 20px, 20px, 20px;
+  background-color: rgba(63, 218, 141, 0.514);
+  border-radius: 12px;
+  width: 90%;
+  margin: 12px auto;
+  margin-bottom: 20px;
+}
+h1 {
+  background-color: rgba(238, 220, 54, 0.705);
+  color: orangered;
+  text-align: center;
+  padding: 10px;
+  border: 2px dashed green;
+  border-radius: 12px;
+  margin: auto;
+  width: 50%;
+}
+h2 {
+  background-color: rgba(202, 186, 47, 0.603);
+  color: rgb(0, 82, 177);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px dotted red;
+  border-radius: 12px;
+  margin: 16px auto;
+  width: 30%;
+}
+.list-title {
+  background-color: rgba(137, 43, 226, 0.397);
+  border-radius: 12px;
+  color: rgb(61, 6, 6);
+  padding: 8px;
+  width: 30%;
+}
+/* ======================Меню====================== */
+nav {
+  ul {
+    list-style: none;
+
+    padding-left: 0px;
+    text-align: center;
+  }
+  li {
+    font-size: 24px;
+    border: 2px solid red;
+    border-radius: 8px;
+    width: 30%;
+    line-height: 50px;
+    display: inline-block;
+  }
+  li a {
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+  }
+  li a:link,
+  li a:visited {
+    color: rgb(46, 43, 226);
+  }
+}
+/* ======================Списки та їх оформлення====================== */
+ul,
+ol {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+/* ==========Ведмеді============ */
+.bear_lists {
+  background-color: rgba(89, 0, 255, 0.349);
+  border-radius: 12px;
+  width: fit-content;
+  margin: 16px auto;
+  padding: 12px 12px 12px 12px;
+}
+.sign_bear li::marker {
+  content: "🐻";
+}
+/* ===========Рисі=========== */
+.lynx_lists {
+  background-color: rgba(89, 0, 255, 0.349);
+  border-radius: 12px;
+  width: fit-content;
+  margin: 16px auto;
+  padding: 12px 12px 12px 12px;
+}
+.sign_lynx li::marker {
+  content: "🐯";
+}
+/* ==========Олені============ */
+.deer_lists {
+  background-color: rgba(89, 0, 255, 0.349);
+  border-radius: 1px;
+  width: fit-content;
+  margin: 16px auto;
+  padding: 12px 12px 12px 12px;
+}
+.sign_o li::marker {
+  content: "🌲";
+}
+.sign_u li::marker {
+  content: "🌳";
+}
+.sign_u_sun li::marker {
+  content: "🌤️";
+}
+.sign_spring li::marker {
+  content: "🦌";
+}
+.sign_u2 li::marker {
+  content: "🪵";
+}
+
+/* ======================Таблиця====================== */
+table {
+  background-color: rgba(228, 159, 95, 0.514);
+  margin: 12px auto;
+  width: 70%;
+}
+table th {
+  background-color: #4989c5;
+}
+td:first-child {
+  background-color: rgb(109, 179, 113);
+}
+/* ======================Кнопка====================== */
+.to_top {
+  font-size: 30px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 16%;
+  background-color: rgba(47, 130, 158, 0.658);
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.to_top a {
+  text-decoration: none;
+}
