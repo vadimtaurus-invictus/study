@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+  font-family: sans-serif;
+}
+
+main {
+  /* Ширина відносно ширини вкладки,
+  відповідно, може =400px на малому екрані,
+  або 2000px на великому екрані */
+  width: 70%;
+
+  /* Якщо 70% - менше 1000px, то ширина
+  контейнера = 70%, інакше, якщо 70% > 1000px,
+  то ширина контейнера = 1000px */
+  max-width: 1000px;
+
+  margin: auto;
+  border: 2px solid purple;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: rgba(250, 235, 215, 0.5);
+}
+.news {
+  display: flex;
+  flex-direction: row;
+  /* Задаємо відступ між вкладеними елементами
+  flex-контейнера */
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+}
+.news-image img {
+  /* базова ширина елемента
+      */
+  width: 100%;
+  min-width: 200px;
+  border-radius: 6px;
+}
+.news-image {
+  /* Базова ширина елемента */
+  /* Якщо після застовування display: flex
+  до батьківського контейнера, вкладені
+  елементи не поміщаються у рядку/колонці,
+  то вони стискаються і базова ширина
+  може зменшитися */
+  width: 200px;
+
+  /* Забороняємо стискання елемента
+  менше ніж 200px */
+  min-width: 200px;
+}
+
+.news_data h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.news_data a {
+  text-decoration: none;
+}
+.news_data a:link,
+.news_data a:visited {
+  color: black;
+  text-decoration: none;
+}
+.news_data p {
+  /* 60% розміру літер батьківського контейнера(0,6em) */
+  font-size: 0.6em;
+  /* перетворює літери у верхній регістр(робить великими) */
+  text-transform: uppercase;
+}

@@ -10,7 +10,12 @@ body {
   background-attachment: fixed;
 }
 /* ======================Шрифти====================== */
-
+.playfair-barber {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .roboto-500 {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -27,7 +32,7 @@ body {
 p {
   text-align: center;
   font-size: 24px;
-  padding: 20px, 20px, 20px, 20px;
+  padding: 20px;
   background-color: rgba(63, 218, 141, 0.514);
   border-radius: 12px;
   width: 90%;
@@ -41,14 +46,14 @@ h1 {
   padding: 10px;
   border: 2px dashed green;
   border-radius: 12px;
-  margin: auto;
+  margin: 20px auto;
   width: 50%;
 }
 h2 {
   background-color: rgba(202, 186, 47, 0.603);
   color: rgb(0, 82, 177);
   text-align: center;
-  font-weight: bold;
+
   padding: 10px;
   border: 2px dotted red;
   border-radius: 12px;
@@ -56,9 +61,10 @@ h2 {
   width: 30%;
 }
 .list-title {
-  background-color: rgba(137, 43, 226, 0.397);
+  font-style: italic;
+  background-color: rgba(119, 16, 216, 0.692);
   border-radius: 12px;
-  color: rgb(61, 6, 6);
+  color: whitesmoke;
   padding: 8px;
   width: 30%;
 }
@@ -73,57 +79,53 @@ nav {
   li {
     font-size: 24px;
     border: 2px solid red;
+    background-color: lavender;
     border-radius: 8px;
     width: 30%;
     line-height: 50px;
     display: inline-block;
-  }
-  li a {
-    text-decoration: none;
-    width: 100%;
-    display: inline-block;
-  }
-  li a:link,
-  li a:visited {
-    color: rgb(46, 43, 226);
+
+    a {
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+    }
+
+    a:link,
+    a:visited {
+      color: rgb(46, 43, 226);
+    }
   }
 }
 /* ======================Списки та їх оформлення====================== */
+.lists_style {
+  background-color: rgba(121, 1, 190, 0.596);
+  color: white;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 16px auto;
+  padding: 12px;
+}
 ul,
 ol {
   font-family: sans-serif;
   font-size: 20px;
 }
-/* ==========Ведмеді============ */
-.bear_lists {
-  background-color: rgba(89, 0, 255, 0.349);
-  border-radius: 12px;
-  width: fit-content;
-  margin: 16px auto;
-  padding: 12px 12px 12px 12px;
+li {
+  padding-left: 12px;
 }
+/* ==========Ведмеді============ */
+
 .sign_bear li::marker {
   content: "🐻";
 }
 /* ===========Рисі=========== */
-.lynx_lists {
-  background-color: rgba(89, 0, 255, 0.349);
-  border-radius: 12px;
-  width: fit-content;
-  margin: 16px auto;
-  padding: 12px 12px 12px 12px;
-}
+
 .sign_lynx li::marker {
   content: "🐯";
 }
 /* ==========Олені============ */
-.deer_lists {
-  background-color: rgba(89, 0, 255, 0.349);
-  border-radius: 1px;
-  width: fit-content;
-  margin: 16px auto;
-  padding: 12px 12px 12px 12px;
-}
+
 .sign_o li::marker {
   content: "🌲";
 }
@@ -142,10 +144,17 @@ ol {
 
 /* ======================Таблиця====================== */
 table {
-  background-color: rgba(228, 159, 95, 0.514);
-  margin: 12px auto;
+  border-collapse: collapse;
+  background-color: rgba(228, 159, 95, 0.753);
+  margin: 20px auto;
   width: 70%;
 }
+th,
+td {
+  border: 2px solid darkblue;
+  text-align: center;
+}
+
 table th {
   background-color: #4989c5;
 }
