@@ -5,7 +5,7 @@ body {
   background-color: rgb(92, 215, 236);
   font-family: sans-serif;
 }
-
+/* =========================Основа картки================= */
 .goods {
   background-color: aliceblue;
   width: 20%;
@@ -15,19 +15,24 @@ body {
   border-radius: 16px;
   padding: 12px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
 }
+/* =====================Зображення товару====================== */
 .goods img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 /* =====================кнопка "додати у вибрані"=================== */
 
-.wish {
+.wish a {
+  text-decoration: none;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
+  top: 15px;
+  right: 15px;
 }
 /* ====================Назва товару============================ */
 .name a {
@@ -35,26 +40,41 @@ body {
   color: black;
   font-weight: 600;
 
-  margin: 12px auto;
+  margin: 12px 0px;
+}
+
+/* ========================Рейтинг та коментарі========================= */
+.rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 6px;
+
+  margin: 6px 0px;
+}
+.count {
+  font-size: small;
 }
 /* ======================Блок цін та кошика================== */
 .buy {
-  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 6px;
+
   margin: 6px;
 }
-.buy img {
-  width: 70%;
-  margin: 6px;
+.cart button {
+  border: none;
+}
+.cart button a {
+  text-decoration: none;
+}
+.cart a img {
+  width: 50px;
 }
 
-.price {
-  position: relative;
-  display: inline-block;
-}
 .old-price {
   font-weight: 200;
   text-decoration: line-through;
@@ -65,24 +85,6 @@ body {
   font-weight: bold;
 }
 
-button {
-  border: none;
-  padding: 0px;
-}
-
-/* ========================Рейтинг та коментарі========================= */
-.rate {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  padding: 6px;
-  margin: 6px;
-}
-.count {
-  font-size: small;
-}
 /* ============================Доставка та лого smart====================== */
 .delivery {
   position: relative;
@@ -90,8 +92,8 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 6px;
-  padding: 8px;
-  margin: 8px;
+  padding: 4px;
+  margin: 4px;
 }
 .free-del a {
   color: green;

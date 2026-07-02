@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  /* прибираємо відступи які додає юраузер по дефолту для всіх елементів
+    Повний контроль нид відступами */
+  /* ====================НЕ обов'язковий================== */
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: burlywood;
+  font-family: sans-serif;
+  font-size: 24px;
+
+  /* =================================вкладений(nested)================ */
+
+  /*медіазапит огортає лише властивості які потрібно змінити, або нові властивості */
+  @media screen and (orientation: landscape) {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+  }
+}
+p {
+  margin: 12px 0px;
+}
+/* ===================класичний підхід================== */
+/* медіазапит огортає правили CSS */
+
+@media screen and (orientation: landscape) {
+  /* правило діє для сторінок в альбомній орієнтації 
+    - (ширина області перегляду більша за висоту) */
+  /* Каскадність продовжує працювати */
+  /* Замінюємо існуючу властивість */
+  body {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+  }
+}
+@media screen and (orientation: portrait) {
+  /* Правило діє для сторінок у портретній
+  орієнтації (висота області перегляду більша за ширину) */
+  body {
+    background-color: darkslateblue;
+    color: whitesmoke;
+  }
+}
+/* ========================================= */
+
+div {
+  width: 80%;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  background-color: azure;
+  color: black;
+  font-weight: normal;
+  padding: 16px;
+  margin: auto;
+}
+@media screen and (min-width: 800px) {
+  /* правило діє якщо ширина області перегляду більша, або рівна 800px */
+  div {
+    width: 60%;
+    padding: 20px;
+    background-color: blueviolet;
+    color: aliceblue;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  /* правило діє якщо ширина області перегляду менша, або рівна 400px */
+  div {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: chartreuse;
+    color: black;
+  }
+}
+@media screen and (min-width: 500px) and(max-width: 700px) {
+  /* Правило діє, якщо ширина області перегляду
+  більша за 500px і менша за 700px,
+  тобто в діапазоні між 500px і 700px */
+  div {
+    width: 80%;
+    background-color: goldenrod;
+    color: darkblue;
+  }
+}

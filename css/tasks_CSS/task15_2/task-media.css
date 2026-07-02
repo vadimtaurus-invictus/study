@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lavender;
+}
+/* ========================Загальні(меню)================= */
+.menu-1st-line,
+.menu-2nd-line {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2px;
+  margin: 2px;
+}
+/* ==============================перший ряд================== */
+.menu-1st-line li {
+  border: 2px solid orange;
+  background-color: orange;
+  height: 120px;
+  width: 120px;
+}
+/* ==================другий ряд========================== */
+.menu-2nd-line li {
+  border: 2px solid green;
+  background-color: green;
+  height: 120px;
+  width: 120px;
+}
+/* ========================hover=========================== */
+.menu-1st-line li:hover {
+  background-color: transparent;
+  color: orange;
+}
+.menu-2nd-line li:hover {
+  background-color: transparent;
+  color: green;
+}
+/* =======================перший ряд border=================== */
+.menu-1st-line li:first-child {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+.menu-1st-line li:nth-child(2) {
+  border-top: 2px solid black;
+}
+.menu-1st-line li:nth-child(3) {
+  border-top: 2px solid black;
+}
+.menu-1st-line li:last-child {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+/* =======================Другий ряд border=================== */
+.menu-2nd-line li:first-child {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.menu-2nd-line li:nth-child(2) {
+  border-bottom: 2px solid black;
+}
+.menu-2nd-line li:nth-child(3) {
+  border-bottom: 2px solid black;
+}
+.menu-2nd-line li:last-child {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+/* ==============================transform media=============== */
+
+@media screen and (max-width: 400px) {
+  .menu-1st-line,
+  .menu-2nd-line {
+    flex-direction: column;
+  }
+  /* =====================================перший ряд======================== */
+  .menu-1st-line li:first-child {
+    width: 180px;
+    height: 40px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .menu-1st-line li:nth-child(2) {
+    width: 180px;
+    height: 40px;
+    border-top: 2px solid orange;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .menu-1st-line li:nth-child(3) {
+    width: 180px;
+    height: 40px;
+    border-top: 2px solid orange;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .menu-1st-line li:last-child {
+    width: 180px;
+    height: 40px;
+    border-top: 2px solid orange;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  /* =====================================другий ряд======================== */
+  .menu-2nd-line li:first-of-type {
+    width: 180px;
+    height: 40px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid green;
+  }
+  .menu-2nd-line li:nth-of-type(2) {
+    width: 180px;
+    height: 40px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid green;
+  }
+  .menu-2nd-line li:nth-of-type(3) {
+    width: 180px;
+    height: 40px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid green;
+  }
+  .menu-2nd-line li:last-of-type {
+    width: 180px;
+    height: 40px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
