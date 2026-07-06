@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #b9b8b8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(171, 79, 207, 0.61);
+}
+
+/* ===== Базові селектори тегів ===== */
+
+/* Всі абзаци жирним шрифтом */
+p {
+  font-weight: bold;
+}
+
+/* Колір усіх заголовків h3 — синій */
+h3 {
+  color: blue;
+}
+
+/* Відступи для всіх елементів span */
+span {
+  padding: 4px 8px;
+}
+
+/* ===== Селектори класів ===== */
+
+/* Клас "highlight" — жовтий фон */
+.highlight {
+  background-color: yellow;
+}
+
+/* Клас "warning" — червоний текст */
+.warning {
+  color: red;
+}
+
+/* Клас "note" — рамка */
+.note {
+  border: 1px solid grey;
+}
+
+/* ===== Комбіновані селектори ===== */
+
+/* Тільки абзаци з класом "special" — курсив */
+p.special {
+  font-style: italic;
+}
+
+/* Тільки span з класом "primary" — колір */
+span.primary {
+  color: green;
+}
+
+/* Абзаци всередині div з класом "content-box" */
+.content-box p {
+  background-color: #80a4ce;
+}
+
+/* ===== Селектори нащадків ===== */
+
+/* Усі абзаци всередині div з класом "mixed-content" */
+.mixed-content p {
+  color: #7d2bc0;
+}
+
+/* Усі span всередині div з класом "nested" */
+.nested span {
+  text-decoration: underline;
+}
+
+/* Абзаци з класом "emphasized" всередині #special-container */
+#special-container p.emphasized {
+  background-color: #cd59d88c;
+  font-size: 20px;
+  font-family: monospace;
+  padding: 6px;
+}
+
+/* ===== Псевдокласи ===== */
+
+/* Перший елемент списку */
+li:first-child {
+  color: orange;
+}
+
+/* Парні рядки таблиці — світло-сірі */
+.data-table tbody tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+/* Ефект hover для посилань у навігації */
+.navigation a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* ===== Складні комбінації ===== */
+
+/* span з класом "secondary" всередині div з класом "primary" */
+.primary span.secondary {
+  color: lawngreen;
+  font-style: italic;
+}
+
+/* Абзаци з класом "note" всередині div з класом "box" */
+.box p.note {
+  background-color: lightskyblue;
+  border-color: goldenrod;
+  border-radius: 6px;
+  padding: 4px 4px 4px 8px;
+}

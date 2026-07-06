@@ -1,0 +1,99 @@
+/* =====================================================================
+   СЕЛЕКТОР = АДРЕСА
+   ---------------------------------------------------------------------
+   Кожен рівень розмітки має 2 класи:
+   загальний (= будь-який такий рівень) + конкретний (= саме цей)
+
+   ОБЛАСТЬ (div)         .bud-yaka-oblast   | .kyivska-oblast
+   МІСТО   (table)       .bud-yake-misto    | .misto-kyiv
+   РАЙОН   (thead/tbody) .bud-yakyi-rayon   | .soborny-rayon
+   ВУЛИЦЯ  (tr)          .bud-yaka-vulytsia | .vulytsia-shevchenka
+   БУДИНОК (td)          .bud-yakyi-budynok | .budynok-1
+   ===================================================================== */
+
+/* --- базове оформлення (можна не чіпати) — щоб структуру було видно --- */
+.bud-yaka-oblast {
+  border: 3px dashed #888;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.bud-yake-misto {
+  border-collapse: collapse;
+  margin: 10px;
+  display: inline-table;
+  vertical-align: top;
+}
+
+.bud-yake-misto caption {
+  font-weight: bold;
+  padding: 4px;
+}
+
+.bud-yakyi-budynok {
+  border: 1px solid #aaa;
+  padding: 8px 12px;
+}
+
+/* =====================================================================
+   ЗАВДАННЯ: під кожним коментарем напиши свій селектор і правило.
+   ===================================================================== */
+
+/* ЗАВДАННЯ 1: задати фон УСІМ МІСТАМ (усім таблицям). */
+.bud-yake-misto {
+  background: rgb(204, 232, 243);
+}
+
+/* ЗАВДАННЯ 2: зробити синім текст усіх БУДИНКІВ у МІСТІ КИЇВ. */
+.misto-kyiv .bud-yakyi-budynok {
+  color: blue;
+}
+
+/* ЗАВДАННЯ 3: підсвітити фоном усіх мешканців ВУЛИЦІ ШЕВЧЕНКА
+   (у будь-якому місті). */
+.vulytsia-shevchenka .bud-yakyi-budynok {
+  background: #e3ee4f;
+}
+
+/* ЗАВДАННЯ 4: окреслити рамкою будинки в РАЙОНІ ПЕЧЕРСЬК
+   саме МІСТА КИЇВ. */
+.misto-kyiv .pechersk-rayon .bud-yakyi-budynok {
+  border: 2px solid rgb(172, 49, 90);
+}
+
+/* ЗАВДАННЯ 5: зробити жирним текст будинків у СОБОРНИХ районах
+   будь-якого міста. */
+.soborny-rayon .bud-yakyi-budynok {
+  font-weight: bold;
+}
+
+/* ЗАВДАННЯ 6: пофарбувати текст усіх будинків в ОБЛАСТІ ОДЕСЬКА. */
+.odeska-oblast .bud-yakyi-budynok {
+  color: purple;
+}
+
+/* ЗАВДАННЯ 7: виділити лише КВАРТИРИ (будинки з класом kvartyra). */
+.kvartyra {
+  background: rgb(252, 158, 236);
+}
+
+/* ЗАВДАННЯ 8: підкреслити ПЕРШИЙ будинок на КОЖНІЙ вулиці. */
+.bud-yaka-vulytsia .bud-yakyi-budynok:first-child {
+  text-decoration: underline;
+}
+
+/* ЗАВДАННЯ 9: зробити курсивом будинки на ВУЛИЦІ ФРАНКА саме в ІРПЕНІ
+   (а в Києві вулиця Франка має лишитись без курсиву). */
+.misto-irpin .vulytsia-franka .bud-yakyi-budynok {
+  font-style: italic;
+}
+
+/* ЗАВДАННЯ 10: виділити БУДИНОК №1 пунктирною лінією */
+.budynok-1 {
+  border: 2px dotted red;
+}
+
+/* ЗАВДАННЯ 11: виділити БУДИНОК №1 лише в ОДЕСЬКІЙ ОБЛАСТІ */
+.odeska-oblast .budynok-1 {
+  background: lightgreen;
+}
