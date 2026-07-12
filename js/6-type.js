@@ -62,7 +62,6 @@ console.log(NaN, `->`, Boolean(NaN)); // false
 // Всі числа крім 0 та NaN конвертуються в true,
 // 0 та NaN - в false
 
-
 console.log("'f'", `->`, Boolean("f")); // true
 console.log("''", `->`, Boolean("")); // false
 console.log("'0'", `->`, Boolean("0")); // true

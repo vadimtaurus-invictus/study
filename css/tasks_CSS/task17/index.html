@@ -1,12 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Творче завдання CSS</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Простір</h1>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#trailer">Трейлер</a></li>
+        <li><a href="#about">Про серіал</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#actors">Актори</a></li>
+        <li><a href="#info">Інфо</a></li>
+        <li><a href="#episodes">Список епізодів</a></li>
+      </ul>
+      <div class="vertical-menu">
+        <div class="menu-button">☰</div>
+
+        <ul class="dropdown-menu">
+          <li><a href="#trailer">Трейлер</a></li>
+          <li><a href="#about">Про серіал</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#actors">Актори</a></li>
+          <li><a href="#info">Інфо</a></li>
+          <li><a href="#episodes">Список епізодів</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="description">
+        <p>
+          «Простір» (оригінальна назва — «Експансія», англ. The Expanse) —
+          телесеріал у жанрі космічної опери/науково-військової фантастики на
+          каналах Syfy та Prime Video, оснований на однойменній серії романів
+          Джеймса С. А. Корі.
+        </p>
+      </section>
+      <section id="trailer" class="trailer">
+        <h2>Трейлер</h2>
+
+        <div>
+          <iframe
+            width="100%"
+            height="480px"
+            src="https://www.youtube.com/embed/kQuTAPWJxNo?si=BfprrP0GCCe3HDxf"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="about">
+        <h2>Про серіал</h2>
+        <p>
+          Дія відбувається у майбутньому, де людство колонізувало Сонячну
+          систему, а суперечності між його фракціями загрожують перерости у
+          війну. Розповідь ведеться з точок зору корабельного офіцера Джеймса
+          Голдена (Стівен Стрейт) і його команди, що опиняються в центрі подій,
+          де поєднуються політичні інтриги та діяльність позаземного розуму.
+        </p>
+        <p>
+          Події розгортаються у XXIII столітті. Людство колонізувало Місяць,
+          Марс, численні астероїди й супутники планет-гігантів. Завдяки винаходу
+          нових двигунів польоти в межах Сонячної системи займають лічені дні,
+          проте міжзоряні подорожі все ще не почалися. Земля, що перебуває під
+          керівництвом ООН, перенаселена. Ресурсів планети бракує, щоби
+          підтримувати життя 30 млрд її жителів, близько половини яких
+          безробітні та утримуються на державному забезпеченні. Марс має
+          автономію та активно розбудовує міста під куполами і здійснює
+          тераформінг. Ці дві планети споживають ресурси, добуті на астероїдах.
+        </p>
+        <p>
+          Супутники зовнішніх планет, такі як Європа, Іо і Ганімед, порівняно
+          самодостатні та навіть здійснюють експорт сировини. За час існування
+          колоній у їхніх жителів дещо змінилася фізіологія. Так, у марсіан
+          легший скелет і вони фізично слабші, порівняно з землянами, а в так
+          званих астероїдян проявляється астенія. Корпорації експлуатують
+          астероїдян, що спричиняє бунти, виникають терористичні рухи та
+          піратство. Суперечності між фракціями людства загрожують вилитися у
+          війну. Триває гонитва озброєнь і для початку військових дій лишається
+          тільки знайти привід.
+        </p>
+      </section>
+      <section id="gallery">
+        <h2>Галерея</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <figure class="capt_img">
+                  <img
+                    src="https://i.redd.it/ae38q0036to61.jpg"
+                    alt="Captain James 'Jim' Holden"
+                  />
+
+                  <figcaption>Капітан Джеймс Голден</figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <img
+                    src="https://i.pinimg.com/originals/63/ac/2f/63ac2f689c5bef8d1a471ca9a1bc530b.jpg"
+                    alt="Amos Burton"
+                  />
+
+                  <figcaption>Амос Бертон</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img
+                    src="https://i.redd.it/naomi-nagata-of-the-expanse-dominique-tipper-v0-li502p7xqcsd1.jpg?width=935&format=pjpg&auto=webp&s=2014d815155dd4b7979f6bc74d2fd1905e478a93"
+                    alt="Naomi Nagata"
+                  />
+
+                  <figcaption>Наомі Нагата</figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <img
+                    src="../content_for_CSS/Cas_Anvar_Expanse_1.webp"
+                    alt="Alex Kamal"
+                  />
+
+                  <figcaption>Алекс Камал</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img
+                    src="https://static.wikia.nocookie.net/expanse/images/9/98/Julie_Mao.jpg/revision/latest?cb=20150712224254"
+                    alt="Julie Mao"
+                  />
+
+                  <figcaption>Джульєтт Андромеда Мао</figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <img
+                    src="https://static.wikia.nocookie.net/expanse/images/2/2d/Josephus_Aloisus_Miller.jpg/revision/latest?cb=20150712224237"
+                    alt="Joe Miller"
+                  />
+
+                  <figcaption>Детектив Джо Міллер</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img
+                    src="https://www.worldanvil.com/uploads/images/847e84752c24078348c20bf501776914.jpg"
+                    alt="Chrisjen Avasarala"
+                  />
+
+                  <figcaption>Крісджен Авасарала</figcaption>
+                </figure>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="gallery-container">
+          <img
+            src="https://images.kinorium.com/movie/shot/739853/h280_39449674.jpg?21576463243"
+            alt="pic_1"
+            class="gallery-item"
+          />
+          <img
+            src="https://uaserial.net/uploads/posts/2019-12/1577464417_w1500_37618646.jpg"
+            alt="pic_2"
+            class="gallery-item"
+          />
+          <img
+            src="https://uaserial.net/uploads/posts/2019-12/thumbs/1577464412_w1500_2301923.jpg"
+            alt="pic_3"
+            class="gallery-item"
+          />
+          <img
+            src="https://images.kinorium.com/movie/shot/739853/h280_39855286.jpg?21577483584"
+            alt="pic_4"
+            class="gallery-item"
+          />
+          <img
+            src="https://images.kinorium.com/movie/shot/739853/h280_39449678.jpg?21576463253"
+            alt="pic_5"
+            class="gallery-item"
+          />
+          <img
+            src="https://images.kinorium.com/movie/shot/739853/h280_39449563.jpg?21576462976"
+            alt="pic_6"
+            class="gallery-item"
+          />
+          <img
+            src="https://images.kinorium.com/movie/shot/739853/h280_39855287.jpg?21577483588"
+            alt="pic_7"
+            class="gallery-item"
+          />
+          <img
+            src="https://images.kinorium.com/movie/promo/739853/h280_39449724.jpg?21576463367"
+            alt="pic_8"
+            class="gallery-item"
+          />
+        </div>
+      </section>
+
+      <section id="actors">
+        <h2>Головні актори</h2>
+        <ul class="cast">
+          <li>Стівен Стрейт - <span>Капітан Джеймс Голден</span></li>
+          <li>Вес Четем - <span>Амос Бертон</span></li>
+          <li>Домінік Тіппер - <span> Наомі Нагата</span></li>
+          <li>Кас Анвар - <span>Алекс Камал</span></li>
+          <li>Флоранс Февр - <span>Джульєтт Андромеда Мао</span></li>
+          <li>Томас Джейн - <span>Детектив Джо Міллер</span></li>
+          <li>Шохре Агдашлу - <span>Крісджен Авасарала</span></li>
+        </ul>
+      </section>
+      <section id="info">
+        <h2>Інформація про серіал</h2>
+        <table>
+          <tr>
+            <th>Роки випуску</th>
+            <td>2015-2022</td>
+          </tr>
+          <tr>
+            <th>Розробка</th>
+            <td>Марк Фергюс, Говк Остбі</td>
+          </tr>
+          <tr>
+            <th>Жанр</th>
+            <td>космічна опера, наукова фантастика</td>
+          </tr>
+          <tr>
+            <th>Кількість сезонів</th>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th>Кількість епізодів (заг.)</th>
+            <td>62</td>
+          </tr>
+          <tr>
+            <th>Тривалість епізоду</th>
+            <td>44 хв.</td>
+          </tr>
+        </table>
+      </section>
+      <section id="episodes">
+        <h2>Список епізодів</h2>
+        <ol>
+          <li>
+            <ul class="episodes-list">
+              <li>Крізь простір (Dulcinea)</li>
+              <li>Корабель «Кентербері» (The Big Empty)</li>
+              <li>Зіткнення (Remember the Cant)</li>
+              <li>CQB (CQB)</li>
+              <li>Повернення м'ясника (Back to the Butcher)</li>
+              <li>Рок-Боттом (Rock Bottom)</li>
+              <li>Швидкість втечі (Windmills)</li>
+              <li>Ганімед (Salvage)</li>
+              <li>Крізь темряву (Critical Mass)</li>
+              <li>Левіафан прокидається (Leviathan Wakes)</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="episodes-list">
+              <li>Двері та кути (Doors & Corners)</li>
+              <li>Зміна парадигми (Paradigm Shift)</li>
+              <li>Ухилення (Static)</li>
+              <li>Встановлення запобіжника (God Speed)</li>
+              <li>Дім (Home)</li>
+              <li>Час на роздуми (Paradox)</li>
+              <li>Модельний організм (The Seventh Man)</li>
+              <li>Шляхи роздоріжжя (Pyre)</li>
+              <li>Суворо за статутом (The Weeping Somnambulist)</li>
+              <li>Скарб Калібана (Cascade)</li>
+              <li>Тут немає прірви (Here There Be Dragons)</li>
+              <li>Життя Всесвіту (The Monster and the Rocket)</li>
+              <li>Полум'я Калібана (Caliban's War)</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="episodes-list">
+              <li>Проект «Ексодус» (Fight or Flight)</li>
+              <li>Втрачені космополіти (IFF)</li>
+              <li>Моє світло (Assured Destruction)</li>
+              <li>Рестарт (Reload)</li>
+              <li>Критична точка (Triple Point)</li>
+              <li>Самопожертвування (Immolation)</li>
+              <li>Втрачені птахи (Delta-V)</li>
+              <li>Це не корабель (It Reaches Out)</li>
+              <li>Робота та відпочинок (Intransigence)</li>
+              <li>Пастка (Dandelion Sky)</li>
+              <li>Вірю (Fallen World)</li>
+              <li>Абаддонська брама (Congregation)</li>
+              <li>Врата (Abaddon's Gate)</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="episodes-list">
+              <li>Ерік (New Terra)</li>
+              <li>Розрив (Jetsam)</li>
+              <li>Дипломатія випаленої землі (Subaru)</li>
+              <li>Колір Сплячого Бога (The Color of Insolence)</li>
+              <li>Маленькі втрати (Aversarala)</li>
+              <li>Відлуння (Displacement)</li>
+              <li>Старе світло (Old Terra)</li>
+              <li>Шлях (The One-Way Glass)</li>
+              <li>Кровотеча (Cibola Burn)</li>
+              <li>Попелястий шторм (Nemesis Games)</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="episodes-list">
+              <li>Вихід (Exodus)</li>
+              <li>Життєвий простір (Churn)</li>
+              <li>Мати (Mother)</li>
+              <li>Гаугамела (Gaugamela)</li>
+              <li>Породи (Triple Canopy)</li>
+              <li>Засипані попелом (Down and Out)</li>
+              <li>Струмінь Ойкумени (Oyedeng)</li>
+              <li>Втеча з Нері (Hard Vacuum)</li>
+              <li>Віггам (Winnipesaukee)</li>
+              <li>Дим і дзеркала (Nemesis Games)</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="episodes-list">
+              <li>Дивні птахи (Strange Dogs)</li>
+              <li>Велике мовчання (Azure Dragon)</li>
+              <li>Спина (Force Projection)</li>
+              <li>Червоні лінії (Redoubt)</li>
+              <li>Човники Бога (Why We Fight)</li>
+              <li>Вавилонський попіл (Babylon's Ashes)</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>Виробництво: Alcon Entertainment.</p>
+      <a
+        href="https://www.imdb.com/title/tt3230854/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%20ex"
+        target="_blank"
+        >Сторінка серіалу на IMDb</a
+      >
+
+      <div class="contacts">
+        <a href="mailto:kotovychvadim7@gmail.com">kotovychvadim7@gmail.com</a>
+        <a href="tel:+36702577523">+36&nbsp;70&nbsp;257&nbsp;7523</a>
+      </div>
+    </footer>
+    <div class="to-top">
+      <a href="#">↑ Top</a>
+    </div>
+
+    <!-- <div class="social-panel">
+        <a href="#" traget="_blank" class="social-btn telegram" target="_blank">
+          <i class="fab fa-telegram-plane"></i> Telegram
+        </a>
+
+        <a href="#" class="social-btn viber" target="_blank">
+          <i class="fab fa-viber"></i> Viber
+        </a>
+
+        <a href="#" class="social-btn whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <a href="#" class="social-btn facebook" target="_blank">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+
+        <a href="#" class="social-btn email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div> -->
+  </body>
 </html>
