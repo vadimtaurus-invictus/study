@@ -55,10 +55,10 @@ if (isNaN(nUmber)) {
 // ==================   5   Стан води
 
 // 1. Отримуємо температуру від користувача (через діалогове вікно prompt)
-let temperatureInput = prompt("Введіть температуру води (°C):");
+const temperatureInput = prompt("Введіть температуру води (°C):");
 
 // 2. Перетворюємо введене значення у число
-let temperature = Number(temperatureInput);
+const temperature = Number(temperatureInput);
 
 // 3. Перевіряємо умови за допомогою if-else
 if (isNaN(temperature)) {
@@ -76,10 +76,10 @@ if (isNaN(temperature)) {
 // ==================   6    Складання іспиту
 
 // 1. Отримуємо оцінку від користувача
-let scoreInput = prompt("Введіть оцінку студента (від 0 до 100):");
+const scoreInput = prompt("Введіть оцінку студента (від 0 до 100):");
 
 // 2. Перетворюємо введене значення у число
-let score = Number(scoreInput);
+const score = Number(scoreInput);
 
 // 3. Перевіряємо умову за допомогою if-else  // з перевіркою:
 // 1- (isNAN) - чи це номер
@@ -141,7 +141,7 @@ if (isNaN(year)) {
 
 // 1. Запитуємо годину у користувача та перетворюємо введене значення у число
 const hourInput = prompt("Введіть годину (від 0 до 23):");
-const hour = parseInt(hourInput);
+const hour = Number(hourInput);
 
 // 2. Перевіряємо, чи ввів користувач коректне число від 0 до 23
 if (isNaN(hour) || hour < 0 || hour > 23) {
