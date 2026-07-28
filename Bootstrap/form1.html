@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body class="bg-body-secondary p4 p-md-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white text-center">
+              <h2 class="fw-bold">Створення облікового запису</h2>
+            </div>
+            <div class="card-body">
+              <form action="" class="needs-validation" novalidate>
+                <div class="row mb-3 g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="firstName" class="form-label"
+                      >Ім'я
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="Олександр"
+                      required
+                    />
+                    <div class="invalid-feedback">Введіть ім'я</div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="lastName" class="form-label"
+                      >Прізвище
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Коваленко"
+                      required
+                    />
+                    <div class="invalid-feedback">Введіть прізвище</div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="email" class="form-label"
+                    >Email адреса
+                    <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"
+                      >@</span
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="inputGroupPrepend"
+                      placeholder="examlpe@mail.com"
+                      required
+                    />
+                    <div class="invalid-feedback">Вкажіть правильний email</div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <!-- пароль та підтвердження -->
+                  <div class="col-12 col-md-6">
+                    <label
+                      for="password"
+                      class="form-label text-secondary fw-semibold small"
+                      >Пароль <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label
+                      for="confirmPassword"
+                      class="form-label text-secondary fw-semibold small"
+                      >Підтвердження пароля
+                      <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="confirmPassword"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3 g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="country" class="form-label"
+                      >Країна/Регіон
+                      <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-select" id="country" required>
+                      <option selected disabled value="">Оберіть країну</option>
+                      <option value="ua">Україна</option>
+                      <option value="pl">Польща</option>
+                      <option value="de">Німеччина</option>
+                      <option value="fr">Франція</option>
+                    </select>
+                    <div class="invalid-feedback">Оберіть країну</div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label d-block"
+                      >Тип акаунта
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="pt-2">
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="accountType"
+                          id="personAcc"
+                          value="person"
+                          checked
+                        />
+                        <label class="form-check-label" for="personAcc"
+                          >Особистий</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="accountType"
+                          id="bisinesAcc"
+                          value="bisines"
+                        />
+                        <label class="form-check-label" for="bisinesAcc"
+                          >Бізнес</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Вибір фото для аватарки -->
+                <div class="mb-3">
+                  <label
+                    for="avatar"
+                    class="form-label text-secondary fw-semibold small"
+                    >Завантажити аватарку</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="avatar"
+                    accept=".png, .jpg, .jpeg"
+                  />
+                  <div class="form-text text-muted small">
+                    Підтримуються формати PNG, JPG (макс. 2 МБ).
+                  </div>
+                </div>
+                <!-- блок інфо про себе -->
+                <div class="mb-3">
+                  <label
+                    for="about"
+                    class="form-label text-secondary fw-semibold small"
+                    >Про себе / Додаткові примітки</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="about"
+                    rows="3"
+                    placeholder="Розкажіть декілька слів про себе..."
+                  ></textarea>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="terms"
+                        required
+                      />
+                      <label class="form-check-label" for="terms">
+                        Я погоджуюся з <a href="#">правилами використання</a>
+                        та політикої конфіденційності
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="invalid-feedback">
+                        Ви повинні погодитися з правилами використання
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-outline-secondary" type="reset">
+                    Очистити
+                  </button>
+                  <button class="btn btn-primary" type="submit">
+                    Зареєструватися
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false,
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>

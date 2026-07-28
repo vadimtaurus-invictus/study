@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.kinorium.com/movie/shot/739853/h280_39449674.jpg?21576463243"
+              class="d-block w-50"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://uaserial.net/uploads/posts/2019-12/1577464417_w1500_37618646.jpg"
+              class="d-block w-50"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://uaserial.net/uploads/posts/2019-12/thumbs/1577464412_w1500_2301923.jpg"
+              class="d-block w-50"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.kinorium.com/movie/shot/739853/h280_39855286.jpg?21577483584"
+              class="d-block w-50"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1>Hello, world!</h1>
+    <p>Hello Bootstrap</p>
+
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">
+      100% wide until extra extra large breakpoint
+    </div>
+    <br />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-12 col-sm-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-12 col-sm-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-3">Level 1: .col-sm-3</div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+            <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

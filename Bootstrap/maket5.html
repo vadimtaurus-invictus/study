@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Макет 5</title>
+    <!-- Підключення Bootstrap 5 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .layout-container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* Загальні стилі для блоків */
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      /* Кольори та висота відповідно до макету */
+      .bg-header {
+        background-color: #64b5f6; /* Блакитний */
+        height: 60px;
+      }
+
+      .bg-hero {
+        background-color: #d1c4e9; /* Бузковий */
+        height: 180px;
+        color: #512da8;
+      }
+
+      .bg-sidebar {
+        background-color: #c8e6c9; /* Світло-зелений */
+        height: 220px;
+        color: #2e7d32;
+      }
+
+      .bg-main {
+        background-color: #ffd54f; /* Жовтий */
+        height: 300px;
+        color: #f57f17;
+      }
+
+      .bg-extra {
+        background-color: #b0bec5; /* Сірий */
+        height: 100px;
+        color: #37474f;
+      }
+
+      .bg-related-images {
+        background-color: #81c784; /* Зелений */
+        height: 140px;
+        color: #1b5e20;
+      }
+
+      .bg-related-posts {
+        background-color: #f8bbd0; /* Рожевий */
+        height: 140px;
+        color: #c2185b;
+      }
+
+      .bg-footer {
+        background-color: #ffb74d; /* Помаранчевий */
+        height: 60px;
+        color: #e65100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container layout-container">
+      <h2 class="fw-bold mb-4">Макет 5</h2>
+
+      <!-- Header (на всю ширину) -->
+      <div class="row mb-3">
+        <div class="col-12">
+          <header class="block bg-header">header</header>
+        </div>
+      </div>
+
+      <!-- Основний блок (Ліва колонка: 40% / Права колонка: 60%) -->
+      <div class="row g-3 mb-3">
+        <!-- Ліва колонка (0.4fr = 5/12 у Bootstrap) -->
+        <div class="col-md-5 d-flex flex-column gap-3">
+          <div class="block bg-hero">hero image</div>
+          <aside class="block bg-sidebar">sidebar</aside>
+        </div>
+
+        <!-- Права колонка (0.6fr = 7/12 у Bootstrap) -->
+        <div class="col-md-7 d-flex flex-column gap-3">
+          <main class="block bg-main">main content</main>
+          <div class="block bg-extra">extra content</div>
+        </div>
+      </div>
+
+      <!-- Рядок з Related Images (0.7 / 70%) та Related Posts (0.3 / 30%) -->
+      <div class="row g-3 mb-3">
+        <!-- Related Images займає ліву та частину середньої колонки (~70% або col-md-8) -->
+        <div class="col-md-8">
+          <div class="block bg-related-images">related images</div>
+        </div>
+        <!-- Related Posts займає праву колонку (~30% або col-md-4) -->
+        <div class="col-md-4">
+          <div class="block bg-related-posts">related posts</div>
+        </div>
+      </div>
+
+      <!-- Footer (на всю ширину) -->
+      <div class="row">
+        <div class="col-12">
+          <footer class="block bg-footer">footer</footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
