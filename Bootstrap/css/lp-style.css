@@ -1,0 +1,145 @@
+:root {
+  --color1: #7c0aa9;
+  --color2: #0091ff;
+}
+
+.header,
+.about,
+.katalog,
+.gallery,
+.form-out {
+  padding-block: 100px;
+}
+
+.header,
+.footer {
+  background: var(--color1); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    var(--color1) 0%,
+    var(--color2) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, var(--color1)),
+    color-stop(100%, var(--color2))
+  ); /* Chrome4-9,Safari4-5 */
+  background: -webkit-linear-gradient(
+    left,
+    var(--color1) 0%,
+    var(--color2) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(
+    left,
+    var(--color1) 0%,
+    var(--color2) 100%
+  ); /* Opera 11.10-11.50 */
+  background: -ms-linear-gradient(
+    left,
+    var(--color1) 0%,
+    var(--color2) 100%
+  ); /* IE10 preview */
+  background: linear-gradient(
+    to right,
+    var(--color1) 0%,
+    var(--color2) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.btn-goto {
+  display: block;
+  max-width: 200px;
+  padding: 7px 20px;
+  margin-inline: auto;
+  background-color: var(--color1);
+  border: 1px solid var(--bs-white);
+}
+
+.btn-goto:hover {
+  background-color: var(--color2);
+  border: 1px solid var(--bs-white);
+}
+
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+.bg1 {
+  background-color: var(--color1);
+}
+
+.bg2 {
+  background-color: var(--color2);
+}
+
+.item-circle {
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--color1);
+  margin: 15px auto 30px;
+}
+
+.about i::before {
+  font-size: 25px;
+  color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bs-white);
+  color: var(--bs-black);
+}
+
+.footer {
+  padding-block: 20px;
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .logo img {
+  width: 100px;
+}
+/* стиль для галереї вітрин */
+.gallery-img {
+  height: 360px; /*фіксована висота */
+  object-fit: cover; /* Картинка заповнює простір без деформації (зайве обрізається) */
+  object-position: center; /* Центрування зображення при обрізанні */
+}
+/* ********Стилі для карток */
+
+.card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
