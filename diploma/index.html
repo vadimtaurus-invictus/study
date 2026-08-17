@@ -190,10 +190,10 @@
               законодавства України про освіту та культуру.
             </p>
             <ul class="doc-list">
-              <li>Статут закладу та нормативна база</li>
-              <li>Структура та керівництво школи</li>
-              <li>Освітні програми та навчальні плани</li>
-              <li>Фінансова звітність та публічні закупівлі</li>
+              <li><a href="#">Статут закладу та нормативна база</a></li>
+              <li><a href="#">Структура та керівництво школи</a></li>
+              <li><a href="#">Освітні програми та навчальні плани</a></li>
+              <li><a href="#">Фінансова звітність та публічні закупівлі</a></li>
             </ul>
           </div>
           <div class="info-block">
@@ -325,7 +325,7 @@
             </div>
 
             <div class="contact-item">
-              <div class="icon">✉️</div>
+              <div class="icon">📩</div>
               <div>
                 <h4>Електронна адреса</h4>
                 <p>
@@ -354,12 +354,19 @@
 
           <div class="contact-form-wrapper">
             <h3>Написати нам</h3>
-            <form id="contactForm" class="contact-form">
+            <div id="formAlert" class="alert-message"></div>
+            <form
+              id="contactForm"
+              class="contact-form"
+              action="send_mail.php"
+              method="POST"
+            >
               <div class="form-group">
                 <label for="name">Ваше ім'я</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   required
                   placeholder="Ім'я та прізвище"
                 />
@@ -369,6 +376,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   required
                   placeholder="example@mail.com"
                 />
@@ -377,12 +385,17 @@
                 <label for="message">Повідомлення</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="4"
                   required
                   placeholder="Ваше запитання або повідомлення..."
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
+              <button
+                type="submit"
+                class="btn btn-primary w-100"
+                id="submitBtn"
+              >
                 Надіслати повідомлення
               </button>
             </form>

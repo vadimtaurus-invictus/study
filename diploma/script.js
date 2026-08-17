@@ -58,16 +58,52 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 6000);
   }
 
-  // 3. Contact Form Submission
+  // 3. Contact Form Submission via AJAX (Fetch API)
   const contactForm = document.getElementById("contactForm");
+  const formAlert = document.getElementById("formAlert");
+  const submitBtn = document.getElementById("submitBtn");
+
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const name = document.getElementById("name").value;
-      alert(
-        `Дякуємо, ${name}! Ваше повідомлення успішно надіслано. Адміністрація закладу зв'яжеться з вами найближчим часом.`,
-      );
-      contactForm.reset();
+
+      const formData = new FormData(contactForm);
+      if (submitBtn) submitBtn.disabled = true;
+
+      if (formAlert) {
+        formAlert.style.display = "block";
+        formAlert.className = "alert-message alert-info";
+        formAlert.textContent = "Надсилання повідомлення...";
+      }
+
+      try {
+        const response = await fetch("send_mail.php", {
+          method: "POST",
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.status === "success") {
+          if (formAlert) {
+            formAlert.className = "alert-message alert-success";
+            formAlert.textContent = result.message;
+          }
+          contactForm.reset();
+        } else {
+          if (formAlert) {
+            formAlert.className = "alert-message alert-error";
+            formAlert.textContent = result.message || "Помилка при відправці.";
+          }
+        }
+      } catch (error) {
+        if (formAlert) {
+          formAlert.className = "alert-message alert-error";
+          formAlert.textContent = "Сталася мережева помилка. Спробуйте пізніше.";
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
     });
   }
 

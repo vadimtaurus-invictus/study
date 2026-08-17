@@ -1,4 +1,4 @@
-/* Variables & Theme Settings */
+/* Variables & Theme Settings | Змінні колірної теми сайту */
 :root {
     --primary-color: #8b1e2f;       /* Deep burgundy/maroon */
     --primary-hover: #6b1422;
@@ -15,7 +15,7 @@
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Reset & Base Styles */
+/* Reset & Base Styles | скидання дефолтних відступів браузера + базові стилі */
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ ul {
     padding: 0 20px;
 }
 
-/* Typography Helpers */
+/* Typography  */
 h1, h2, h3, h4 {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -316,7 +316,7 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
 }
 
-/* Layout & Grid Helpers */
+/* Layout & Grid  */
 .section {
     padding: 80px 0;
 }
@@ -628,6 +628,33 @@ h1, h2, h3, h4 {
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
+}
+
+/* Alert Messages for Form Submission */
+.alert-message {
+    display: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.alert-info {
+    background-color: rgba(59, 130, 246, 0.2);
+    border: 1px solid #3b82f6;
+    color: #93c5fd;
+}
+
+.alert-success {
+    background-color: rgba(34, 197, 94, 0.2);
+    border: 1px solid #22c55e;
+    color: #86efac;
+}
+
+.alert-error {
+    background-color: rgba(239, 68, 68, 0.2);
+    border: 1px solid #ef4444;
+    color: #fca5a5;
 }
 
 /* Footer */
